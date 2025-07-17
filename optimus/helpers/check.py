@@ -48,8 +48,6 @@ def is_column_a(df, column=None, data_types="str"):
         result = None
     return result
 
-
-#
 # def is_column_a(df, column, dtypes):
 #     """
 #     Check if column match a list of data types
@@ -68,18 +66,17 @@ def is_column_a(df, column=None, data_types="str"):
 #
 #     # Filter columns by data type
 #     return isinstance(df.schema[column].dataType, data_type)
-# def is_cudf_series(value):
+
+#  def is_cudf_series(value):
 #     return cudf.core.series.Series
 
 # def is_cudf_dataframe(value):
 #     from cudf.core import DataFrame as CUDFDataFrame
 #     return isinstance(value, CUDFDataFrame)
 #
-#
 # def is_cudf_series(value):
 #     import cudf
 #     return isinstance(value, cudf.core.series.Series)
-#
 #
 def is_dask_cudf_dataframe(value):
     """
@@ -146,7 +143,6 @@ def is_pandas_series(value):
     :return:
     """
     return isinstance(value, pd.Series)
-
 
 def equal_function(f1, f2):
     f2 = val_to_list(f2)
