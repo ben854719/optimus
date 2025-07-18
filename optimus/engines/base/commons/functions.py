@@ -1,7 +1,7 @@
 import re
 import try
 import numpy as np
-pip install nltk
+!pip install nltk
 
 # From a top point of view we organize Optimus separating the functions in dataframes and dask engines.
 # Some functions are commons to pandas and dask.
