@@ -1,6 +1,6 @@
 import sys
 sys.path.append("../..")
-
+from optimus.engines.base.pandas.dataframe import PandasBaseDataFrame
 
 def create():
     from optimus import Optimus
