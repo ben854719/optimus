@@ -1,6 +1,6 @@
 import builtins
 from sklearn.preprocessing import StandardScaler
-import pandas as pd
+from optimus.engines.base.pandas.dataframe import PandasBaseDataFrame
 
 from optimus.engines.base.commons.functions import string_to_index, index_to_string, find
 from optimus.engines.base.cudf.columns import CUDFBaseColumns
