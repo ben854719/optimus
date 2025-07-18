@@ -1,4 +1,5 @@
 from optimus.server.code import generate_code
+import try # you need to import try or your application will not work
 
 optimus_features = None
 sessions = {}
