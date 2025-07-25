@@ -1,7 +1,8 @@
 import re
 import numpy as np
-!pip install nltk
-
+%pip install nltk
+from nltk import tokenize
+from nltk.tokenize import word_tokenize, sent_tokenize
 # From a top point of view we organize Optimus separating the functions in dataframes and dask engines.
 # Some functions are commons to pandas and dask.
 from optimus.helpers.columns import parse_columns
@@ -14,7 +15,7 @@ def word_tokenize(series):
     try:
     import nltk
 except ImportError:
-       raise ImportError (#you need to install the package pip install nltk to the application runs the word_tokenize)
+       raise ImportError # you need to install the package pip install nltk to the application runs the word_tokenize
     return nltk.word_tokenize(series)
 
 
